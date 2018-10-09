@@ -1,8 +1,9 @@
-openssl實測
+##openssl實測
 
 openssl help
 
 Standard commands
+
 asn1parse         ca                ciphers           cms               
 crl               crl2pkcs7         dgst              dhparam           
 dsa               dsaparam          ec                ecparam           
@@ -36,13 +37,17 @@ rc2-40-cbc        rc2-64-cbc        rc2-cbc           rc2-cfb
 rc2-ecb           rc2-ofb           rc4               rc4-40            
 seed              seed-cbc          seed-cfb          seed-ecb          
 seed-ofb          
+
 互動式 vs 指令式
+
 先建立資料檔:
 
 echo "123456789" > data.txt
 echo "a123456789" > data2.txt
 echo "A123456789" > data.txt
+
 指令式
+
 openssl sha1 data.txt
 SHA1(data.txt)= 179c94cf45c6e383baf52621687305204cef16f9
 
@@ -51,7 +56,9 @@ SHA1(data2.txt)= 02d707e871eb91f4a5dc34b6269d3469b987adbf
 
 openssl sha1 data3.txt
 SHA1(data3.txt)= 589a1c3dd871704c0e506a5b0386cffd932d9ef5
+
 互動式
+
 openssl
 OpenSSL> sha1 datat.txt
 datat.txt: No such file or directory
@@ -70,6 +77,7 @@ OpenSSL>
 DES對稱式密碼實測(對稱式密碼)
 
 RSA非對稱式密碼實測(非對稱式密碼)
+
 genrsa
  
 rsa 
